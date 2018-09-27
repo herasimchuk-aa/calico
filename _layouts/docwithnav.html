@@ -48,6 +48,9 @@ The code is a little roundabout for a few reasons:
     <link rel="stylesheet" href="{{site.baseurl}}/css/style.css"/>
     <link rel="stylesheet" href="{{site.baseurl}}/css/plugins/offcanvas.css"/>
     <link href="https://www.projectcalico.org/wp-content/themes/dante/css/font-awesome.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" /> 
+
     <script src="{{site.baseurl}}/js/jquery-2.2.0.min.js"></script>
     <script src="{{site.baseurl}}/js/bootstrap/bootstrap.min.js"></script>
     <script src="{{site.baseurl}}/js/script.js"></script>
@@ -91,7 +94,7 @@ The code is a little roundabout for a few reasons:
           </div>
           <div id="tigera-navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="https://projectcalico.org">Home</a></li>
+              <li><a href="https://projectcalico.org">Home 23	1</a></li>
               <li class="active"><a href="https://projectcalico.org/resources"><span>Resources</span></a>
                 <ul>
                     <li><a href="{{site.baseurl}}/latest/getting-started/"><i class="fa fa-tachometer" aria-hidden="true"></i> &nbsp; Getting Started</a></li>
@@ -204,7 +207,7 @@ The code is a little roundabout for a few reasons:
                   s.parentNode.insertBefore(gcse, s);
                 })();
               </script>
-              <gcse:search></gcse:search>
+              <input id="search_test" />
             </div>
             <div id="sidebar">
             	{% include sidebar.html sidebar=this_pages_navbar.toc prefix="nav" %}
@@ -233,5 +236,13 @@ The code is a little roundabout for a few reasons:
         </div>
       </div>
     </section>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script> 
+<script type="text/javascript"> docsearch({ 
+apiKey: '99def7ba73ea2430f7f42383148fe57a', 
+indexName: 'projectcalico', 
+inputSelector: '#search_test', 
+debug: false // Set debug to true if you want to inspect the dropdown 
+}); 
+</script> 
   </body>
 </html>
